@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple - Todo App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	 <meta property="og:title" content="Simple - Todo App">
+	 
+
+        <meta property="og:description" content="Todo App. Todo App gives you focus, from work to play.">
+        <meta name="description" content="Todo App. Todo App gives you focus, from work to play.">
+        <link rel="shortcut icon" href="./Todo-App.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./Todo-App.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./Todo-App.png">
+	<link rel="manifest" href="./manifest.json">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+    	<div class="text-container">
+    		<h1>
+    			Todo app
+    		</h1>
+    	</div>
+    	<div class="center">
+    		<div class="todo-input-container" style="padding: 1em .75em;">
+    			<input type="text" name="todo" id="todo-text" class="todo-input" placeholder="whats in your mind today :)">
+    			<button class="todo-add-button" id="todo-add-button">
+    				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+    					<circle cx="12" cy="12" r="10"></circle>
+    					<line x1="12" y1="8" x2="12" y2="16"></line>
+    					<line x1="8" y1="12" x2="16" y2="12"></line>
+    				</svg>
+    			</button>
+    		</div>
+    		<ul class="todo-container" id="todo-container" style="padding: 1em .75em;">
+    		</ul>
+    	</div>
+    </div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/sweetalert2@9'></script><script  src="./script.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
