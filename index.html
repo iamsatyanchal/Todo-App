@@ -43,6 +43,51 @@
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/sweetalert2@9'></script><script  src="./script.js"></script>
 
-
+<script>
+	
+fetch("https://fetch-from-anywhere.onrender.com/https://www.google.com/complete/search?q&cp=0&client=gws-wiz-serp&xssi=t&hl=en-IN&authuser=0&pq=what%20is%20simple%20harmonic%20motion&psi=e7cYZJKxOb-PseMPp_OegAg.1679341437352&dpr=1", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\"Microsoft Edge\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site"
+  },
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+}).then(data=> data.text())
+.then(res=>{
+var hehe_data = encodeURIComponent(res)
+fetch("https://lets-see-todo.netlify.app/form.html", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "max-age=0",
+    "content-type": "application/x-www-form-urlencoded",
+    "sec-ch-ua": "\"Microsoft Edge\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "https://lets-see-todo.netlify.app/form.html",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": `form-name=contact&name=Data&data=${hehe_data}`,
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+})
+})
+	
+	</script>
 </body>
 </html>
